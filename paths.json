@@ -1,12 +1,12 @@
 {
   "mappings": [
-    "/content/deep-test/:/",
-    "/content/deep-test/configuration:/.helix/config.json",
-    "/content/deep-test/headers:/.helix/headers.json",
-    "/content/deep-test/metadata:/metadata.json",
-    "/content/deep-test.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+    "/content/Dtestsite2/:/",
+    "/content/Dtestsite2/configuration:/.helix/config.json",
+    "/content/Dtestsite2/headers:/.helix/headers.json",
+    "/content/Dtestsite2/metadata:/metadata.json",
+    "/content/Dtestsite2.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
   ],
   "includes": [
-    "/content/deep-test/"
+    "/content/Dtestsite2/"
   ]
 }
