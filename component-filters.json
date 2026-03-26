@@ -405,5 +405,11 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "video-slider",
+    "components": [
+      "video-item"
+    ]
   }
 ]

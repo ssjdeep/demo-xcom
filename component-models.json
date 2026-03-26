@@ -452,6 +452,65 @@
     ]
   },
   {
+    "id": "video-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "Thumbnail Image",
+        "description": "Optional thumbnail image. If not provided, auto-generated for YouTube videos.",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "thumbnailAlt",
+        "label": "Thumbnail Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Video Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Video Description"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "videoUrl",
+        "label": "Video URL",
+        "description": "YouTube, Vimeo, or DAM video URL",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "videoType",
+        "label": "Video Type",
+        "options": [
+          {
+            "name": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "name": "Vimeo",
+            "value": "vimeo"
+          },
+          {
+            "name": "DAM",
+            "value": "dam"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
