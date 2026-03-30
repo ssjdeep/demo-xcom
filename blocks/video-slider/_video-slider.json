@@ -69,14 +69,7 @@
           "valueType": "string",
           "name": "description",
           "label": "Description",
-          "value": ""
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "publishDate",
-          "label": "Publish Date",
-          "description": "Format: YYYY-MM-DD (used for sorting by Most Recent)",
+          "description": "Video description. To enable date sorting, add the publish date (YYYY-MM-DD) as the last paragraph.",
           "value": ""
         }
       ]

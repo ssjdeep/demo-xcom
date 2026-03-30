@@ -3,6 +3,7 @@
     display: grid;
     margin-block: var(--spacing-small);
     grid-template-areas:
+        "heading"
         "result-info"
         "view-facets"
         "facets"
@@ -81,6 +82,20 @@
     gap: var(--spacing-xxsmall);
 }
 
+/* Page Heading */
+.block.product-list-page .search__heading {
+    grid-area: heading;
+    margin: 0 0 var(--spacing-small);
+    font-size: var(--type-heading-l-size, 2.4rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/* Hide view toggle when author disables it */
+.block.product-list-page.product-list-page--no-view-toggle .dropin-search-results__view-toggle {
+    display: none;
+}
+
 /* Empty State */
 
 .block.product-list-page.product-list-page--empty .search__wrapper {
@@ -101,6 +116,7 @@
 @media only screen and (min-width: 768px) {
     .block.product-list-page .search__wrapper {
         grid-template-areas:
+            "heading heading"
             "result-info product-sort"
             "facets product-list"
             ". pagination";

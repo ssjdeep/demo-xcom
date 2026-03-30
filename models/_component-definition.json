@@ -51,6 +51,9 @@
         },
         {
           "...": "../blocks/header/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/tabs/_*.json#/definitions"
         }
       ]
     },
