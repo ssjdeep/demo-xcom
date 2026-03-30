@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "file:///tmp/canon-homepage-rendered.html",
+  "path": "tmp/canon-homepage-rendered",
+  "timestamp": "2026-03-10T14:30:28.861Z",
+  "title": "Canon Homepage | Canon U.S.A., Inc.",
+  "template": "homepage",
+  "blocks": [
+    "hero-promo",
+    "carousel-deals",
+    "carousel-deals",
+    "cards-content",
+    "columns-promo",
+    "cards-category",
+    "cards-support",
+    "columns-cta"
+  ]
+}

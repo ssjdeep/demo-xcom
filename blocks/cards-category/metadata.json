@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-10T12:57:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.usa.canon.com/",
+    "originPage": "Canon USA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "category-navigation",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "image + label-link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product category grids",
+      "navigation tile layouts",
+      "icon-based category selection"
+    ],
+    "notSuitableFor": [
+      "detailed product cards",
+      "article content cards",
+      "support/feature cards with descriptions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T12:57:00.000Z"
+  }
+}

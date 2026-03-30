@@ -1,0 +1,60 @@
+.tabs .tabs-list {
+  display: flex;
+  gap: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  border-bottom: 2px solid var(--color-neutral-300);
+  scrollbar-width: none;
+}
+
+.tabs .tabs-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs .tabs-list button {
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: var(--color-neutral-700);
+  font-family: var(--type-base-font-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.tabs .tabs-list button p {
+  margin: 0;
+}
+
+.tabs .tabs-list button:hover {
+  color: var(--color-brand-500);
+}
+
+.tabs .tabs-list button[aria-selected='true'] {
+  color: #212529;
+  font-weight: 700;
+  border-bottom: 3px solid var(--color-brand-500);
+}
+
+.tabs .tabs-panel {
+  padding: 24px 0;
+}
+
+.tabs .tabs-panel[aria-hidden='true'] {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .tabs .tabs-list button {
+    font-size: 1.6rem;
+    padding: 14px 32px;
+  }
+}

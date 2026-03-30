@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-promo",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-10T12:57:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.usa.canon.com/",
+    "originPage": "Canon USA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "promotional-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA + product-image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banners with text and image",
+      "product highlight sections",
+      "two-column text + image layouts"
+    ],
+    "notSuitableFor": [
+      "multi-column CTA bars",
+      "text-only column layouts",
+      "data comparison columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T12:57:00.000Z"
+  }
+}

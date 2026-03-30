@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-10T12:57:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.usa.canon.com/",
+    "originPage": "Canon USA homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "promotional-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subtext + CTA + product-image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero banners",
+      "promotional landing pages",
+      "campaign pages with product imagery"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "video hero backgrounds",
+      "minimal blog headers"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T12:57:00.000Z"
+  }
+}
