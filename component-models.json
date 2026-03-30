@@ -114,6 +114,12 @@
             "value": "highlight"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "tab",
+        "label": "Tab Label",
+        "description": "Assigns this section as a tab panel. Value must match one of the labels in the Tabs block."
       }
     ]
   },
@@ -760,6 +766,18 @@
     ]
   },
   {
+    "id": "tab-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Tab Label",
+        "description": "Display text for the tab button. Must match the Tab Label in the corresponding section's metadata."
+      }
+    ]
+  },
+  {
     "id": "video-slider-item",
     "fields": [
       {
@@ -805,167 +823,6 @@
         "label": "Publish Date",
         "description": "Format: YYYY-MM-DD (used for sorting by Most Recent)",
         "value": ""
-      }
-    ]
-  },
-  {
-    "id": "header",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "navPath",
-        "label": "Navigation Path",
-        "description": "Path to the navigation fragment (default: /nav)",
-        "value": "/nav"
-      }
-    ]
-  },
-  {
-    "id": "nav-brand",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "logo",
-        "label": "Logo Image",
-        "description": "Brand logo image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "logoAlt",
-        "label": "Logo Alt Text",
-        "value": "Canon"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "brandLink",
-        "label": "Brand Link URL",
-        "description": "URL the logo links to (e.g., /)",
-        "value": "/"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "brandName",
-        "label": "Brand Name",
-        "description": "Text-only brand name (used when no logo image)",
-        "value": "Canon"
-      }
-    ]
-  },
-  {
-    "id": "nav-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "label",
-        "label": "Link Label",
-        "description": "Display text for the navigation link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "url",
-        "label": "Link URL",
-        "description": "URL the link navigates to"
-      },
-      {
-        "component": "boolean",
-        "valueType": "boolean",
-        "name": "external",
-        "label": "Open in New Tab",
-        "description": "Open link in a new browser tab"
-      }
-    ]
-  },
-  {
-    "id": "nav-group",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "groupLabel",
-        "label": "Dropdown Label",
-        "description": "Display text for the dropdown menu trigger (e.g., Products, Support)"
-      }
-    ]
-  },
-  {
-    "id": "nav-group-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "label",
-        "label": "Link Label",
-        "description": "Display text for the dropdown link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "url",
-        "label": "Link URL",
-        "description": "URL the dropdown link navigates to"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "icon",
-        "label": "Icon Image",
-        "description": "Optional icon image displayed next to the link",
-        "multi": false
-      }
-    ]
-  },
-  {
-    "id": "nav-tool",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "label",
-        "label": "Tool Label",
-        "description": "Display text for the utility link (e.g., Sign In)"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "url",
-        "label": "Tool URL",
-        "description": "URL the tool link navigates to"
-      },
-      {
-        "component": "select",
-        "name": "type",
-        "label": "Tool Type",
-        "description": "Type of tool for special rendering behavior",
-        "options": [
-          {
-            "name": "Link",
-            "value": "link"
-          },
-          {
-            "name": "Sign In",
-            "value": "signin"
-          },
-          {
-            "name": "Cart",
-            "value": "cart"
-          },
-          {
-            "name": "Search",
-            "value": "search"
-          },
-          {
-            "name": "Wishlist",
-            "value": "wishlist"
-          }
-        ]
       }
     ]
   },

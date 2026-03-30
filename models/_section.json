@@ -51,6 +51,12 @@
               "value": "highlight"
             }
           ]
+        },
+        {
+          "component": "text",
+          "name": "tab",
+          "label": "Tab Label",
+          "description": "Assigns this section as a tab panel. Value must match one of the labels in the Tabs block."
         }
       ]
     },
