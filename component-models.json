@@ -743,7 +743,75 @@
         "name": "urlPath",
         "label": "URL Path",
         "valueType": "string",
-        "description": "Current Category URL Path"
+        "description": "Category URL path from Adobe Commerce (e.g., digital-cameras/mirrorless-cameras)"
+      },
+      {
+        "component": "text",
+        "name": "pageHeading",
+        "label": "Page Heading",
+        "valueType": "string",
+        "description": "Optional heading displayed above the product grid"
+      },
+      {
+        "component": "select",
+        "name": "pageSize",
+        "label": "Products Per Page",
+        "valueType": "string",
+        "description": "Number of products shown before Load More",
+        "options": [
+          {
+            "name": "8",
+            "value": "8"
+          },
+          {
+            "name": "12",
+            "value": "12"
+          },
+          {
+            "name": "16",
+            "value": "16"
+          },
+          {
+            "name": "24",
+            "value": "24"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "defaultSort",
+        "label": "Default Sort",
+        "valueType": "string",
+        "description": "Initial sort order for the product listing",
+        "options": [
+          {
+            "name": "Recommended",
+            "value": "position_DESC"
+          },
+          {
+            "name": "Price: Low to High",
+            "value": "price_ASC"
+          },
+          {
+            "name": "Price: High to Low",
+            "value": "price_DESC"
+          },
+          {
+            "name": "Name: A to Z",
+            "value": "name_ASC"
+          },
+          {
+            "name": "Name: Z to A",
+            "value": "name_DESC"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "showViewToggle",
+        "label": "Show View Toggle",
+        "valueType": "boolean",
+        "description": "Display grid/list view toggle in the toolbar"
       }
     ]
   },
@@ -814,14 +882,7 @@
         "valueType": "string",
         "name": "description",
         "label": "Description",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "publishDate",
-        "label": "Publish Date",
-        "description": "Format: YYYY-MM-DD (used for sorting by Most Recent)",
+        "description": "Video description. To enable date sorting, add the publish date (YYYY-MM-DD) as the last paragraph.",
         "value": ""
       }
     ]

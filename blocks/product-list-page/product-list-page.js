@@ -27,8 +27,15 @@ export default async function decorate(block) {
 
   const config = readBlockConfig(block);
 
+  // Parse author-configurable settings
+  const pageSize = Number(config.pagesize) || 12;
+  const defaultSort = config.defaultsort
+    ? [{ attribute: config.defaultsort.split('_')[0], direction: config.defaultsort.split('_')[1] }]
+    : [{ attribute: 'position', direction: 'DESC' }];
+
   const fragment = document.createRange().createContextualFragment(`
     <div class="search__wrapper">
+      ${config.pageheading ? `<h1 class="search__heading">${config.pageheading}</h1>` : ''}
       <div class="search__result-info"></div>
       <div class="search__view-facets"></div>
       <div class="search__facets"></div>
@@ -47,6 +54,11 @@ export default async function decorate(block) {
 
   block.innerHTML = '';
   block.appendChild(fragment);
+
+  // Optionally hide the view toggle
+  if (config.showviewtoggle === 'false') {
+    block.classList.add('product-list-page--no-view-toggle');
+  }
 
   // Add category url path to block for enrichment
   if (config.urlpath) {
@@ -69,8 +81,8 @@ export default async function decorate(block) {
     await search({
       phrase: '', // search all products in the category
       currentPage: page ? Number(page) : 1,
-      pageSize: 8,
-      sort: sort ? getSortFromParams(sort) : [{ attribute: 'position', direction: 'DESC' }],
+      pageSize,
+      sort: sort ? getSortFromParams(sort) : defaultSort,
       filter: [
         { attribute: 'categoryPath', eq: config.urlpath }, // Add category filter
         ...getFilterFromParams(filter),
@@ -83,8 +95,8 @@ export default async function decorate(block) {
     await search({
       phrase: q || '',
       currentPage: page ? Number(page) : 1,
-      pageSize: 8,
-      sort: getSortFromParams(sort),
+      pageSize,
+      sort: sort ? getSortFromParams(sort) : defaultSort,
       filter: getFilterFromParams(filter),
     }).catch(() => {
       console.error('Error searching for products');
