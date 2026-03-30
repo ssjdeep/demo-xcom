@@ -1,0 +1,136 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.usa.canon.com/"
+      ],
+      "description": "Canon USA homepage with hero banner, product categories, promotions, and featured content",
+      "blocks": [
+        {
+          "name": "hero-promo",
+          "instances": [
+            ".contentsplit-cmp.contentsplit__40-60"
+          ]
+        },
+        {
+          "name": "carousel-deals",
+          "instances": [
+            ".input-card-carousel .d-card-component-container"
+          ]
+        },
+        {
+          "name": "cards-content",
+          "instances": [
+            ".target-teaser"
+          ]
+        },
+        {
+          "name": "columns-promo",
+          "instances": [
+            ".contentsplit-cmp.contentsplit__50-50"
+          ]
+        },
+        {
+          "name": "cards-category",
+          "instances": [
+            ".popular-categories"
+          ]
+        },
+        {
+          "name": "cards-support",
+          "instances": [
+            ".lists"
+          ]
+        },
+        {
+          "name": "columns-cta",
+          "instances": [
+            ".bumper-gradient"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": ".contentsplit.content-split-clickable-image:first-of-type",
+          "style": null,
+          "blocks": [
+            "hero-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Most Popular Deals",
+          "selector": ".input-card-carousel",
+          "style": null,
+          "blocks": [
+            "carousel-deals"
+          ],
+          "defaultContent": [
+            ".d-card-header-container .heading-default",
+            ".input-card-carousel > a"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Content For You",
+          "selector": ".target-teaser",
+          "style": null,
+          "blocks": [
+            "cards-content"
+          ],
+          "defaultContent": [
+            ".target-teaser-heading"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "MegaTank Promo",
+          "selector": ".contentsplit.content-split-clickable-image:nth-of-type(2)",
+          "style": "light",
+          "blocks": [
+            "columns-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Popular Categories",
+          "selector": ".popular-categories",
+          "style": null,
+          "blocks": [
+            "cards-category"
+          ],
+          "defaultContent": [
+            ".pc-title"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "Get Support",
+          "selector": ".lists",
+          "style": null,
+          "blocks": [
+            "cards-support"
+          ],
+          "defaultContent": [
+            ".heading-top h2"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "CTA Bar",
+          "selector": ".bumper",
+          "style": "gradient",
+          "blocks": [
+            "columns-cta"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

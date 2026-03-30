@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-deals",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-03-10T12:57:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.usa.canon.com/",
+    "originPage": "Canon USA homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-deals",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "product-image + name + price + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product deal carousels",
+      "e-commerce product showcases",
+      "sale/promotion product sliders"
+    ],
+    "notSuitableFor": [
+      "image-only galleries",
+      "testimonial carousels",
+      "content/article carousels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T12:57:00.000Z"
+  }
+}

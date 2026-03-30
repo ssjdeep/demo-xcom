@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-10T12:57:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.usa.canon.com/",
+    "originPage": "Canon USA homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "cta-bar",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + action-link",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "colored CTA bars at bottom of pages",
+      "multi-action footer-adjacent sections",
+      "engagement/newsletter/support CTAs"
+    ],
+    "notSuitableFor": [
+      "image-based column layouts",
+      "promotional banners with product images",
+      "data comparison tables"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T12:57:00.000Z"
+  }
+}
