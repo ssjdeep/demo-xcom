@@ -452,36 +452,6 @@
     ]
   },
   {
-    "id": "video-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "thumbnail",
-        "label": "Thumbnail Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Video Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "description",
-        "label": "Video Description"
-      },
-      {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "videoUrl",
-        "label": "Video URL"
-      }
-    ]
-  },
-  {
     "id": "page-metadata",
     "fields": [
       {
