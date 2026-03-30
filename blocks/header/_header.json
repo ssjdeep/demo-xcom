@@ -1,0 +1,276 @@
+{
+  "definitions": [
+    {
+      "title": "Header",
+      "id": "header",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Header",
+              "model": "header",
+              "filter": "header"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Nav Brand",
+      "id": "nav-brand",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Nav Brand",
+              "model": "nav-brand"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Nav Item",
+      "id": "nav-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Nav Item",
+              "model": "nav-item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Nav Group",
+      "id": "nav-group",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Nav Group",
+              "model": "nav-group",
+              "filter": "nav-group"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Nav Group Item",
+      "id": "nav-group-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Nav Group Item",
+              "model": "nav-group-item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Nav Tool",
+      "id": "nav-tool",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Nav Tool",
+              "model": "nav-tool"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "header",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "navPath",
+          "label": "Navigation Path",
+          "description": "Path to the navigation fragment (default: /nav)",
+          "value": "/nav"
+        }
+      ]
+    },
+    {
+      "id": "nav-brand",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "logo",
+          "label": "Logo Image",
+          "description": "Brand logo image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "logoAlt",
+          "label": "Logo Alt Text",
+          "value": "Canon"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "brandLink",
+          "label": "Brand Link URL",
+          "description": "URL the logo links to (e.g., /)",
+          "value": "/"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "brandName",
+          "label": "Brand Name",
+          "description": "Text-only brand name (used when no logo image)",
+          "value": "Canon"
+        }
+      ]
+    },
+    {
+      "id": "nav-item",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "label",
+          "label": "Link Label",
+          "description": "Display text for the navigation link"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "url",
+          "label": "Link URL",
+          "description": "URL the link navigates to"
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "external",
+          "label": "Open in New Tab",
+          "description": "Open link in a new browser tab"
+        }
+      ]
+    },
+    {
+      "id": "nav-group",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "groupLabel",
+          "label": "Dropdown Label",
+          "description": "Display text for the dropdown menu trigger (e.g., Products, Support)"
+        }
+      ]
+    },
+    {
+      "id": "nav-group-item",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "label",
+          "label": "Link Label",
+          "description": "Display text for the dropdown link"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "url",
+          "label": "Link URL",
+          "description": "URL the dropdown link navigates to"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "icon",
+          "label": "Icon Image",
+          "description": "Optional icon image displayed next to the link",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "nav-tool",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "label",
+          "label": "Tool Label",
+          "description": "Display text for the utility link (e.g., Sign In)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "url",
+          "label": "Tool URL",
+          "description": "URL the tool link navigates to"
+        },
+        {
+          "component": "select",
+          "name": "type",
+          "label": "Tool Type",
+          "description": "Type of tool for special rendering behavior",
+          "options": [
+            {
+              "name": "Link",
+              "value": "link"
+            },
+            {
+              "name": "Sign In",
+              "value": "signin"
+            },
+            {
+              "name": "Cart",
+              "value": "cart"
+            },
+            {
+              "name": "Search",
+              "value": "search"
+            },
+            {
+              "name": "Wishlist",
+              "value": "wishlist"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "header",
+      "components": [
+        "nav-brand",
+        "nav-item",
+        "nav-group",
+        "nav-tool"
+      ]
+    },
+    {
+      "id": "nav-group",
+      "components": [
+        "nav-group-item"
+      ]
+    }
+  ]
+}
