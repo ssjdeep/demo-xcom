@@ -485,6 +485,21 @@
     ]
   },
   {
+    "id": "header",
+    "components": [
+      "nav-brand",
+      "nav-item",
+      "nav-group",
+      "nav-tool"
+    ]
+  },
+  {
+    "id": "nav-group",
+    "components": [
+      "nav-group-item"
+    ]
+  },
+  {
     "id": "video-slider",
     "components": [
       "video-slider-item"

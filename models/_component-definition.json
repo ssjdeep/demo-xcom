@@ -48,6 +48,9 @@
         },
         {
           "...": "../blocks/content-fragment/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/header/_*.json#/definitions"
         }
       ]
     },

@@ -3,18 +3,22 @@
 ---
 
 - **Products**
-  - [Cameras](/cameras)
-  - [Lenses](/lenses)
-  - [Video](/video)
+  - [Cameras](/digital-cameras)
+  - [Lenses](/camera-lenses)
+  - [Video](/video-cameras)
   - [Printers](/printers)
-  - [Ink, Toner & Paper](/ink-toner-paper)
+  - [Ink, Toner & Paper](/shop/ink-paper-toner)
   - [Office](/office)
-  - [Deals](/deals)
-  - [Protect Your Product](/protect-your-product)
+  - [Deals](/shop/deals)
+  - [Protect Your Product](/shop/extended-warranties-carepak)
 - [Learning](/learning)
-- [Community](/community)
-- [Support](/support)
-- [Contact Us](/contact-us)
+- [Community](https://community.usa.canon.com/)
+- **Support**
+  - [Product Support](/support)
+  - [Software & Drivers](/support/software-and-drivers)
+  - [Service & Repair](/support/service-and-repair)
+  - [Product Advisories](/support/canon-product-advisories)
+- [Contact Us](/consumer-contact-us)
 
 ---
 
