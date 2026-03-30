@@ -23,8 +23,7 @@
       "columns",
       "fragment",
       "product-teaser",
-      "product-recommendations",
-      "video-slider"
+      "product-recommendations"
     ]
   },
   {
@@ -39,8 +38,7 @@
       "columns",
       "fragment",
       "product-teaser",
-      "product-recommendations",
-      "video-slider"
+      "product-recommendations"
     ]
   },
   {
@@ -57,8 +55,7 @@
       "enrichment",
       "product-teaser",
       "product-recommendations",
-      "product-list-page",
-      "video-slider"
+      "product-list-page"
     ]
   },
   {
@@ -407,12 +404,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "video-slider",
-    "components": [
-      "video-item"
     ]
   }
 ]
