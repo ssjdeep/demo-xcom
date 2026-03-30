@@ -135,7 +135,7 @@
   left: calc(50% - 2px);
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
   .carousel-deals .carousel-deals-navigation-buttons {
     left: 24px;
     right: 24px;

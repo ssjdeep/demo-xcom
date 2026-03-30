@@ -38,5 +38,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
       },
     },
+    {
+      files: ['component-models.json'],
+      rules: {
+        'xwalk/max-cells': 'off',
+      },
+    },
   ],
 };

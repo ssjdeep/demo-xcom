@@ -9,3 +9,4 @@ scripts/commerce-events-sdk.js
 plugins/
 cypress/
 dompurify.min.js
+tools/importer/*.bundle.js
